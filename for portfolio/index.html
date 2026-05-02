@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David John Gaboy - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            padding: 60px 50px;
+            text-align: center;
+            max-width: 520px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            font-size: 2.8em;
+            margin-bottom: 8px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .info {
+            color: #0066cc;
+            font-size: 1em;
+            margin-bottom: 25px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .description {
+            color: #555;
+            font-size: 1.05em;
+            margin-bottom: 45px;
+            line-height: 1.7;
+        }
+
+        button {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            border: none;
+            padding: 14px 45px;
+            font-size: 1em;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(30, 60, 114, 0.3);
+        }
+
+        button:active {
+            transform: translateY(-1px);
+        }
+
+        .footer {
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 1px solid #f0f0f0;
+            color: #aaa;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>David John Gaboy</h1>
+        <div class="info">BSIT1 South 3</div>
+        <div class="description">
+            Welcome to my portfolio! Click the button below to explore my work and projects.
+        </div>
+        <button onclick="openPortfolio()">View My Portfolio</button>
+
+    </div>
+
+    <script>
+        function openPortfolio() {
+            const portfolioLink = 'pangalawa.pdf';
+            window.open(portfolioLink, '_blank');
+        }
+    </script>
+</body>
+</html>
